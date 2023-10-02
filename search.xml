@@ -4,7 +4,38 @@
   
     
     <entry>
-      <title>HTML入门教程：第1篇</title>
+      <title>HTML入门教程：第2篇 | 创建超链接与图像</title>
+      <link href="/2023/10/02/"/>
+      <url>/2023/10/02/</url>
+      
+        <content type="html"><![CDATA[<p>在上一篇教程中，我们介绍了HTML的基础概念和常见标签。现在，让我们继续深入学习HTML，学会如何创建超链接和插入图像，这些是构建互联网上信息丰富页面的关键元素。</p><h2 id="创建超链接"><a href="#创建超链接" class="headerlink" title="创建超链接"></a>创建超链接</h2><p>超链接（Hyperlink）是将不同网页或网页内的不同部分相互连接的一种方式。在HTML中，我们使用<code>&lt;a&gt;</code>标签来创建超链接。以下是创建超链接的基本语法：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;目标链接&quot;</span>&gt;</span>链接文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li><code>href</code> 属性定义了链接的目标，可以是另一个网页的URL，也可以是文件的路径。</li><li>链接文本是用户在页面上看到的可点击文本。</li></ul><h3 id="外部链接"><a href="#外部链接" class="headerlink" title="外部链接"></a>外部链接</h3><p>要创建指向外部网页的链接，只需将目标URL放在<code>href</code>属性中，如下所示：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span>&gt;</span>访问示例网站<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h3><p>如果你想在同一网站内链接到另一个页面，可以使用相对路径。假设你有一个名为<code>about.html</code>的页面，位于与当前页面相同的目录中，你可以这样创建内部链接：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;about.html&quot;</span>&gt;</span>关于我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="在新窗口中打开链接"><a href="#在新窗口中打开链接" class="headerlink" title="在新窗口中打开链接"></a>在新窗口中打开链接</h3><p>有时，你可能希望链接在新窗口或标签页中打开，而不是在当前窗口中。为了实现这一点，可以使用<code>target</code>属性：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>在新窗口中打开链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>target=&quot;_blank&quot;</code>告诉浏览器在新窗口中打开链接。</p><h2 id="插入图像"><a href="#插入图像" class="headerlink" title="插入图像"></a>插入图像</h2><p>插入图像是丰富网页内容的关键之一。在HTML中，我们可以使用<code>&lt;img&gt;</code>标签来插入图像，并可以通过属性来设置图像的宽度（<code>width</code>）和高度（<code>height</code>）。</p><p>以下是更详细的图像插入语法：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图像路径&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;替代文本&quot;</span> <span class="attr">width</span>=<span class="string">&quot;宽度&quot;</span> <span class="attr">height</span>=<span class="string">&quot;高度&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li><code>src</code> 属性定义了图像的路径，可以是相对路径或绝对URL。</li><li><code>alt</code> 属性用于提供图像的替代文本，当图像无法加载时，替代文本将显示。</li><li><code>width</code> 属性定义了图像的宽度，以像素（px）为单位。</li><li><code>height</code> 属性定义了图像的高度，以像素（px）为单位。</li></ul><h3 id="插入本地图像"><a href="#插入本地图像" class="headerlink" title="插入本地图像"></a>插入本地图像</h3><p>如果图像位于与HTML文件相同的目录中，可以使用相对路径插入图像，并设置宽度和高度：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;my-image.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;我的图片&quot;</span> <span class="attr">width</span>=<span class="string">&quot;300&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="插入远程图像"><a href="#插入远程图像" class="headerlink" title="插入远程图像"></a>插入远程图像</h3><p>要插入来自远程服务器的图像，只需提供图像的完整URL，并设置宽度和高度：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://www.example.com/images/my-image.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;我的图片&quot;</span> <span class="attr">width</span>=<span class="string">&quot;400&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><p>通过设置宽度和高度属性，你可以控制图像在页面上的显示尺寸，确保图像在不失真的情况下适应页面布局。</p><h2 id="实际示例"><a href="#实际示例" class="headerlink" title="实际示例"></a>实际示例</h2><p>现在，让我们通过实际示例来演示创建超链接和插入图像。</p><iframe width="100%" height="400" src="//jsrun.net/MqxKp/embedded/html,result/light" allowfullscreen="allowfullscreen" frameborder="0"></iframe><p>以上示例中，我们创建了两个超链接分别指向外部网站和内部页面，并插入了一张远程图像。你可以根据需要修改链接的目标URL和图像的路径。</p><p>希望这个实际示例对你有所帮助。如果你有任何进一步的问题或需要更多帮助，请随时告诉我。</p><p>希望这篇教程对你有所帮助。如果你需要进一步的指导或有其他问题，请随时用邮件联系我：<a href="mailto:&#122;&#x40;&#122;&#105;&#x67;&#x61;&#x6f;&#x2e;&#x78;&#x79;&#122;">&#122;&#x40;&#122;&#105;&#x67;&#x61;&#x6f;&#x2e;&#x78;&#x79;&#122;</a>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 分享 </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML入门教程：第1篇 | 基础概念与常见标签</title>
       <link href="/2023/10/01/"/>
       <url>/2023/10/01/</url>
       
